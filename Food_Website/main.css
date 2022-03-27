@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat&display=swap');
+/*Custom Properties*/
+:root{
+    --leading:2em;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+}
+.container {
+    background:url('./mae-mu-8Vh6ulKc50o-unsplash.jpg');
+    background-position:18% 93%;/*This is  X direction and Y direction*/
+    color:white;
+    text-align: center;
+    padding-bottom:4em;
+    
+    
+    }
+    header{
+       /*top left right bottom*/
+       padding:1em 0 ;
+    }
+    .container a{
+        text-decoration: none;
+        color:white;
+        font-size:2rem;
+        font-weight: bold;
+        
+    }
+    section{
+        margin:0 1em ;/*0 top bottom and 1 on the left andd right*/
+    }
+    h1{
+        font-size: 2.2rem;
+         
+        
+    }
+    h1 span{
+        text-transform: uppercase;
+        display: block;
+        font-size: 1.5rem;
+        position: relative;
+        
+
+    }
+    h1 span::before{
+        content: '';
+        position:absolute;
+        width: 4em;
+        background:#0d546c;
+        height: .15em;
+       bottom: 0;
+       margin-right: -5em;
+    }
+    .container p{
+        font-weight: bold;
+        margin: 0 1em 3em;/*top left right bottom*/    
+    }
+    .form-container{
+        background: white;
+        color: black;
+        margin:2em -1em 0;
+        padding: .2em;
+    }
+    label{
+        color:#2D7D98;
+        font-weight: bold;
+        display:block;
+        margin-bottom:1em;
+        font-size: 1.4em;
+        margin-top: 2em;
+    }
+    input[type=text]{
+        border: 2px solid #707070;
+        width:80vw;
+        padding: 1em;
+        border-radius:.5em;
+       /* box-sizing: border-box; for padding to reduce left*/
+    }
+    .form-container p{
+        color: grey;
+        margin-bottom: 1.5em;
+        font-weight:normal;
+        font-size: .9rem;
+        margin-top: .3em;
+    }
+     input[type=button]{
+         background-color: #F89104;
+         border-radius: 1em;
+         width: 100%;
+         color: white;
+         font-weight: bold;
+         padding: 1em 0;
+         
+         font-size: 1.3em;
+         cursor: pointer;
+
+     }
+    
+    input[type=button]:hover{
+        background-color: rgb(188, 75, 5);
+        font-weight: normal;
+    }
+    .authentic{
+        margin: 0;
+    }
+    .right-col{
+        text-align: center;
+        margin: 3em 1em;
+    }
+    h2{
+        text-transform: uppercase;
+        position: relative;
+    }
+    img{
+        width: 100%;
+
+    }
+    h2::before{
+        content: '';
+        position:absolute;
+        width: 4em;
+        background:#0d546c;
+        height: .15em;
+       bottom: 0;
+       margin-right: -5em;
+    } /*For this we have to apply position relative and absolute in before elements */
+    .right-col p{
+        line-height: var(--leading);
+    
+    }
+   .authentic h1{
+       font-size:1.375rem;
+       text-align: center;
+   }
+    @media(min-width:730px){
+        section{
+            margin: 0 4em;
+        }
+       .form-container input[type=button]{
+           margin: 2em -5em;
+            width: 60vw;
+            border: 1px solid snow;
+            border-radius: 2em;
+        }
+        .form-container input[type=text]{
+            width: 50vw;
+        }
+        .authentic{
+            padding: 3em 3em;
+        }
+        .img{
+            width: 70%;
+        }
+      .authentic h1{
+          text-align: center;
+        background-image:  linear-gradient(rgb(164, 11, 167),rgba(210, 43, 17, 0.886));
+        background-clip: text;
+        color: transparent;
+      }
+     .hand{
+         color: saddlebrown;
+     }
+     span2{
+         color: #0d546c;
+         border:2px solid sandybrown;
+         border-radius: 5em;
+         background-color: #F89104;
+         
+     }     
+    }
+    @media (min-width:930px){
+        .container {
+            text-align: left;
+        }
+        .container p{
+          margin-right:10em;
+          position: relative;
+          right: .777em;
+        }
+        .form-container{
+            border-radius: .5em;
+            box-shadow: 10px 10px 22px 12px rgba(0,0,0,0.1);
+            height: 10vh;
+            width: 80%;
+        }
+        
+        
+        .form-container input[type=text]{
+             width: 49%;
+             height: 1%;
+             margin-left:1em;
+             position:relative;
+             bottom: 2em;
+             
+        }
+                .form-container label{
+            position: relative;
+            left: .6em;
+          bottom:1em;
+        }
+        form p{
+            position: relative;
+            bottom: 1em;
+            left:.11em;
+        }
+        .form-container input[type=button]{
+            position: relative;
+            left:29em;
+            bottom:9.6em;
+            padding: 1em 2em;
+            font-size: 1rem;
+            width: 34%;
+           border-radius: 1em;
+           height: 1%;
+        }
+        .authentic {
+            display: grid;
+            grid-template-columns: repeat(2,40%);
+     
+            
+        }
+        img{
+            grid-area:1/1/3/2 ;
+            position: relative;
+            top: 2em;
+            width:60vw;
+            right: 5em;
+          
+        }
+      .right-col{
+          
+          position: relative;
+          bottom: 2.7em;
+          left:10em;
+          
+        
+      }
+     .authentic h1{
+    position: relative;
+      right: 3em;
+      font-size: 2rem;
+      font-weight: bold;
+ 
+     }
+     .right-col p{
+         font-size:0.875rem;
+         letter-spacing:1px;
+          text-overflow: clip;
+          
+     }
+     @media(min-width:1344px){
+         .authentic img{
+             width:50vw;
+             position:relative;
+             left:0;
+                     }
+        .right-col{
+            
+            
+            position: relative;
+                        
+            padding-left:2em;
+            font-size: 1rem;
+            
+            
+
+        }
+        .right-col p{
+            font-size:1rem;
+            white-space:pre-wrap;
+            width: 40vw;
+            margin-top: 5em;
+            margin-left: 2em;
+            
+        }
+        .authentic h2{
+        margin-left: 5.54em;
+        margin-top: 1em;
+        }
+        .form-container input[type=text]{
+            width: 14vw;
+            position: relative;
+            left: 16em;
+            bottom: 6em;
+            height:1vh;
+            
+
+        }
+        .form-container p{
+            position: relative;
+            left: 17em;
+            bottom: 5.50em;
+        }
+        .form-container label{
+            font-size: 1.50rem;
+            
+        }
+        .form-container input[type=button]{
+           position: relative;
+            bottom: 11em;
+            width: 20vw;
+            margin-left:3em;
+            display:block;
+            height: 6vh;
+            padding: .33em;
+                    
+                
+            
+        }
+        .form-container{
+            padding: 4em;
+            width: 62vw;
+
+        }
+        
+                
+        
+
+         }
+     
+    }
